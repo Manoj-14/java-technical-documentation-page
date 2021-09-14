@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Java documentation</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav id="navbar">
+        <header>JAVA DOCUMENTATION</header>
+        <ul>
+          <li><a href="#introduction" class="nav-link">Introduction</a></li>
+          <li>
+            <a href="#The_Java_Buzzwords" class="nav-link"
+              >The Java Buzzwords</a
+            >
+          </li>
+          <li><a href="#data_types" class="nav-link">Data Types</a></li>
+          <li><a href="#variables" class="nav-link">Variables</a></li>
+          <li>
+            <a href="#control_statements" class="nav-link"
+              >Control Statements</a
+            >
+          </li>
+          <li>
+            <a href="#introducing_classes" class="nav-link"
+              >Introducing Classes</a
+            >
+          </li>
+          <li><a href="#inheritance" class="nav-link">Inheritance</a></li>
+          <li><a href="#packages" class="nav-link">Packages</a></li>
+          <li><a href="#interfaces" class="nav-link">Interfaces</a></li>
+          <li>
+            <a href="#exception_handling" class="nav-link"
+              >Exception Handling</a
+            >
+          </li>
+          <li>
+            <a href="#multithreaded_programming" class="nav-link"
+              >Multithreaded Programming</a
+            >
+          </li>
+          <li>
+            <a href="#introducing_swing" class="nav-link">Introducing Swing</a>
+          </li>
+          <li><a href="#reference" class="nav-link">Reference</a></li>
+        </ul>
+      </nav>
+      <main id="main-doc">
+        <section id="introduction" class="main-section">
+          <header>
+            <h2>Introduction</h2>
+          </header>
+          <p>
+            Java is a high-level, class-based, object-oriented programming
+            language that is designed to have as few implementation dependencies
+            as possible. It is a general-purpose programming language intended
+            to let application developers write once, run anywhere
+            (WORA),meaning that compiled Java code can run on all platforms that
+            support Java without the need for recompilation.Java applications
+            are typically compiled to bytecode that can run on any Java virtual
+            machine (JVM) regardless of the underlying computer architecture.
+            The syntax of Java is similar to C and C++, but has fewer low-level
+            facilities than either of them. The Java runtime provides dynamic
+            capabilities (such as reflection and runtime code modification) that
+            are typically not available in traditional compiled languages. As of
+            2019, Java was one of the most popular programming languages in use
+            according to GitHub,particularly for client-server web applications,
+            with a reported 9 million developers.
+          </p>
+          <span>Some Application of java language are</span>
+          <ul>
+            <li>Mobile App Development.</li>
+            <li>Desktop GUI Applications.</li>
+            <li>Web-based Applications.</li>
+            <li>Gaming Applications</li>
+            <li>Big Data Technologies</li>
+            <li>Cloud-based Applications</li>
+          </ul>
+        </section>
+        <section id="The_Java_Buzzwords" class="main-section">
+          <header>
+            <h2>The Java Buzzwords</h2>
+          </header>
+          <p>
+            the fundamental forces that necessitated the invention of Java are
+            portability and security, other factors also played an important
+            role in molding the final form of the language. The key
+            considerations were summed up by the Java team in the following list
+            of buzzwords:
+          </p>
+          <ul>
+            <li>Simple</li>
+            <li>Secure</li>
+            <li>Portable</li>
+            <li>Object-oriented</li>
+            <li>Robust</li>
+            <li>Multithreaded</li>
+            <li>Architecture-neutral</li>
+            <li>Architecture-neutral</li>
+            <li>Distributed</li>
+            <li>High performance</li>
+            <li>Dynamic</li>
+          </ul>
+        </section>
+        <section id="data_types" class="main-section">
+          <header>
+            <h2>Data types</h2>
+          </header>
+          <p>
+            Java defines eight primitive types of data: byte, short, int, long,
+            char, float, double, and boolean. The primitive types are also
+            commonly referred to as simple types, and both terms will be used in
+            this book. These can be put in four groups:
+          </p>
+          <ul>
+            <li>
+              <b>Integers</b> This group includes byte, short, int, and long,
+              which are for whole-valued signed numbers.
+            </li>
+            <li>
+              <b>Floating-point</b> numbers This group includes float and
+              double, which represent numbers with fractional precision.
+            </li>
+            <li>
+              <b>Characters</b> This group includes char, which represents
+              symbols in a character set, like letters and numbers.
+            </li>
+            <li>
+              <b>Boolean</b> This group includes boolean, which is a special
+              type for representing true/false values.
+            </li>
+          </ul>
+        </section>
+        <section id="variables" class="main-section">
+          <header>
+            <h2>Variables</h2>
+          </header>
+          <p>
+            The variable is the basic unit of storage in a Java program. A
+            variable is defined by the combination of an identifier, a type, and
+            an optional initializer. In addition, all variables have a scope,
+            which defines their visibility, and a lifetime. These elements are
+            examined next.
+          </p>
+          <span
+            >In Java, all variables must be declared before they can be used.
+            The basic form of a variable declaration is shown here:</span
+          >
+          <code>type identifier [ = value ][, identifier [= value ] ...];</code>
+          <span
+            >Here are several examples of variable declarations of various
+            types. Note that some include an initialization.</span
+          >
+          <code>int a, b, c; // declares three ints, a, b, and c</code>
+          <code
+            >int d = 3, e, f = 5; // declares three more ints, initializing d
+            and f</code
+          ><code>byte z = 22; // initializes z.</code
+          ><code>char x = 'x'; // the variable x has the value 'x' .</code
+          ><code>double pi = 3.14159; // declares an approximation of pi</code>
+          <p>
+            The identifiers that you choose have nothing intrinsic in their
+            names that indicates their type. Java allows any properly formed
+            identifier to have any declared type.
+          </p>
+        </section>
+        <section id="control_statements" class="main-section">
+          <header>
+            <h2>Control Statements</h2>
+          </header>
+          <p>
+            A programming language uses control statements to cause the flow of
+            execution to advance and branch based on changes to the state of a
+            program. Java’s program control statements can be put into the
+            following categories: selection, iteration, and jump. Selection
+            statements allow your program to choose different paths of execution
+            based upon the outcome of an expression or the state of a variable.
+            Iteration statements enable program execution to repeat one or more
+            statements (that is, iteration statements form loops). Jump
+            statements allow your program to execute in a nonlinear fashion. All
+            of Java’s control statements are examined here.
+          </p>
+          <span
+            >You will be pleasantly surprised by the power and flexibility
+            contained in these two statements.</span
+          >
+          <p>
+            The <b>if</b> statement is Java’s conditional branch statement. It
+            can be used to route program execution through two different paths.
+            Here is the general form of the if statement:
+          </p>
+          <code>if (condition) statement1; </code><code>else statement2;</code>
+          <p>
+            Here, each statement may be a single statement or a compound
+            statement enclosed in curly braces (that is, a block). The condition
+            is any expression that returns a boolean value. The else clause is
+            optional.
+          </p>
+          <p>
+            The if works like this: If the condition is true, then statement1 is
+            executed. Otherwise, statement2 (if it exists) is executed. In no
+            case will both statements be executed
+          </p>
+          <p>
+            The <b>switch</b> statement is Java’s multiway branch statement. It
+            provides an easy way to dispatch execution to different parts of
+            your code based on the value of an expression. As such, it often
+            provides a better alternative than a large series of if-else-if
+            statements. Here is the general form of a switch statement:
+          </p>
+          <pre><code
+            >switch (expression) {<br />  case value1:<br />    // statement sequence<br />    break; <br /> case value2: <br />   // statement sequence<br />    break;<br />.<br />.<br />  case valueN : <br />    // statement sequence <br />    break; <br /> default: <br />   // default statement sequence <br />}</code></pre>
+        </section>
+        <section id="introducing_classes" class="main-section">
+          <header>
+            <h2>Introducing Classes</h2>
+          </header>
+          <p>
+            The class is at the core of Java. It is the logical construct upon
+            which the entire Java language is built because it defines the shape
+            and nature of an object. As such, the class forms the basis for
+            object-oriented programming in Java. Any concept you wish to
+            implement in a Java program must be encapsulated within a class.
+          </p>
+          <p>
+            Because the class is so fundamental to Java, this and the next few
+            chapters will be devoted to it. Here, you will be introduced to the
+            basic elements of a class and learn how a class can be used to
+            create objects. You will also learn about methods, constructors, and
+            the this keyword.
+          </p>
+          <span>The General Form of a Class</span>
+          <pre><code>class classname  {<br>  type instance-variable1;<br>  // ...<br>  type instance-variable2;<br>  // ... <br>  type instance-variableN;<br>  // ...<br>  type methodname1(parameter-list){<br>  // body of the method<br>  }<br>  type methodname2(parameter-list){<br>  // body of the method<br>  }<br>  type methodnameN(parameter-list){<br>  // body of the method<br>  }<br>}</code></pre>
+        </section>
+        <section id="inheritance" class="main-section">
+          <header>
+            <h2>Inheritance</h2>
+          </header>
+          <p>
+            Inheritance is one of the cornerstones of object-oriented
+            programming because it allows the creation of hierarchical
+            classifications. Using inheritance, you can create a general class
+            that defines traits common to a set of related items. This class can
+            then be inherited by other, more specific classes, each adding those
+            things that are unique to it. In the terminology of Java, a class
+            that is inherited is called a superclass. The class that does the
+            inheriting is called a subclass. Therefore, a subclass is a
+            specialized version of a superclass. It inherits all of the members
+            defined by the superclass and adds its own, unique elements.
+          </p>
+          <span>A simple example of inheritance.</span>
+          <pre><code>// Create a superclass. <br>class A {<br>   int i, j;<br>    void showij() {<br>     System.out.println("i and j: " + i + " " + j);<br>   }<br> }  <br>// Create a subclass by extending class A. <br>class B extends A {<br>   int k;<br>    void showk() {<br>     System.out.println("k: " + k);<br>   }<br>} </code></pre>
+        </section>
+        <section id="packages" class="main-section">
+          <header>
+            <h2>Packages</h2>
+          </header>
+          <p>
+            Packages are containers for classes. They are used to keep the class
+            name space compartmentalized. For example, a package allows you to
+            create a class named List, which you can store in your own package
+            without concern that it will collide with some other class named
+            List stored elsewhere. Packages are stored in a hierarchical manner
+            and are explicitly imported into new class definitions.
+          </p>
+          <p>
+            To create a package is quite easy: simply include a package command
+            as the first statement in a Java source file. Any classes declared
+            within that file will belong to the specified package. The package
+            statement defines a name space in which classes are stored. If you
+            omit the package statement, the class names are put into the default
+            package, which has no name. (This is why you haven’t had to worry
+            about packages before now.) While the default package is fine for
+            short, sample programs, it is inadequate for real applications.
+          </p>
+        </section>
+        <section id="interfaces" class="main-section">
+          <header>
+            <h2>Interfaces</h2>
+          </header>
+          <p>
+            Using interface, you can specify a set of methods that can be
+            implemented by one or more classes. In its traditional form, the
+            interface, itself, does not actually define any implementation.
+            Although they are similar to abstract classes, interfaces have an
+            additional capability: A class can implement more than one
+            interface. By contrast, a class can only inherit a single superclass
+            (abstract or otherwise).
+          </p>
+          <span
+            >An interface is defined much like a class. This is a simplified
+            general form of an interface:</span
+          >
+          <pre><code>access interface name { 
+        return-type method-name1(parameter-list);<br>         return-type method-name2(parameter-list);<br>          type final-varname1 = value;<br>         type final-varname2 = value;<br>         //...<br>         return-type method-nameN(parameter-list);<br>         type final-varnameN = value; <br>}</code></pre>
+        </section>
+        <section id="exception_handling" class="main-section">
+          <header>
+            <h2>Exception Handling</h2>
+          </header>
+          <p>
+            A Java exception is an object that describes an exceptional (that
+            is, error) condition that has occurred in a piece of code. When an
+            exceptional condition arises, an object representing that exception
+            is created and thrown in the method that caused the error. That
+            method may choose to handle the exception itself, or pass it on.
+            Either way, at some point, the exception is caught and processed.
+            Exceptions can be generated by the Java run-time system, or they can
+            be manually generated by your code. Exceptions thrown by Java relate
+            to fundamental errors that violate the rules of the Java language or
+            the constraints of the Java execution environment. Manually
+            generated exceptions are typically used to report some error
+            condition to the caller of a method.
+          </p>
+          <p>
+            Java exception handling is managed via five keywords:
+            <b>try, catch, throw, throws,</b> and <b>finally</b>. Briefly, here
+            is how they work. Program statements that you want to monitor for
+            exceptions are contained within a try block. If an exception occurs
+            within the try block, it is thrown. Your code can catch this
+            exception (using catch) and handle it in some rational manner.
+            System-generated exceptions are automatically thrown by the Java
+            run-time system. To manually throw an exception, use the keyword
+            throw. Any exception that is thrown out of a method must be
+            specified as such by a throws clause. Any code that absolutely must
+            be executed after a try block completes is put in a finally block.
+          </p>
+          <span>This is the general form of an exception-handling block:</span>
+          <pre><code>try {<br>           // block of code to monitor for errors      <br>}       <br>catch (ExceptionType1 exOb) {<br>           // exception handler for ExceptionType1      <br>}       <br>catch (ExceptionType2 exOb) {<br>           // exception handler for ExceptionType2      <br>}      <br>// ...      <br>finally {<br>           // block of code to be executed after try block ends      <br>}</code></pre>
+        </section>
+        <section id="multithreaded_programming" class="main-section">
+          <header>
+            <h2>Multithreaded Programming</h2>
+          </header>
+          <p>
+            Java provides built-in support for <b>multithreaded programming</b>.
+            A multithreaded program contains two or more parts that can run
+            concurrently. Each part of such a program is called a thread, and
+            each thread defines a separate path of execution. Thus,
+            multithreading is a specialized form of multitasking
+          </p>
+          <p>
+            <b>Process-based multitasking</b> is the feature that allows your
+            computer to run two or more programs concurrently. For example,
+            process-based multitasking enables you to run the Java compiler at
+            the same time that you are using a text editor or visiting a web
+            site. In process-based multitasking, a program is the smallest unit
+            of code that can be dispatched by the scheduler.
+          </p>
+          <p>
+            In a <b>Thread-based multitasking</b> environment, the thread is the
+            smallest unit of dispatchable code. This means that a single program
+            can perform two or more tasks simultaneously. For instance, a text
+            editor can format text at the same time that it is printing, as long
+            as these two actions are being performed by two separate threads.
+            Thus, <b>Process-based multitasking</b> deals with the “big
+            picture,” and thread-based multitasking handles the details.
+          </p>
+        </section>
+        <section id="introducing_swing" class="main-section">
+          <header>
+            <h2>Introducing Swing</h2>
+          </header>
+          <p>
+            Swing is a framework that provides more powerful and flexible GUI
+            components than does the AWT. As a result, it is the GUI that has
+            been widely used by Java programmers for more than a decade.
+          </p>
+          <p>
+            Swing did not exist in the early days of Java. Rather, it was a
+            response to deficiencies present in Java’s original GUI subsystem:
+            the Abstract Window Toolkit. The AWT defines a basic set of
+            controls, windows, and dialog boxes that support a usable, but
+            limited graphical interface. One reason for the limited nature of
+            the AWT is that it translates its various visual components into
+            their corresponding, platform-specific equivalents, or peers. This
+            means that the look and feel of a component is defined by the
+            platform, not by Java. Because the AWT components use native code
+            resources, they are referred to as heavyweight.
+          </p>
+          <span>Two Key features of Swing</span>
+          <ul>
+            <li>Swing Components Are Lightweight</li>
+            <li>Swing Supports a Pluggable Look and Feel</li>
+          </ul>
+        </section>
+        <section id="reference" class="main-section">
+          <header>
+            <h2>Reference</h2>
+          </header>
+
+          <ul id="ref">
+            <li>
+              All the documentation in this page is taken from
+              <i>JAVA the complete Reference 9th Edition by Herbert Schildt</i>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
